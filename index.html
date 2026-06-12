@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Settle Method — calm an overwired nervous system in 90 seconds | Settle with Mara</title>
+  <meta name="description" content="A pocket workbook that teaches your body to drop from 'wired' to 'settled' in under two minutes. One method you'll remember at 3am. Not medical advice." />
+  <link rel="canonical" href="https://settlewithmara.com/" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="The Settle Method — calm your nervous system in 90 seconds" />
+  <meta property="og:description" content="You're not broken. Your nervous system is just stuck in 'go'. A pocket workbook to bring yourself back down — in under two minutes." />
+  <meta property="og:url" content="https://settlewithmara.com/" />
+  <meta property="og:image" content="REPLACE_WITH_OG_IMAGE_URL" /> <!-- 1200x630 -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="The Settle Method — Settle with Mara" />
+  <meta name="twitter:description" content="You're not broken. Your nervous system is just stuck in 'go'." />
+  <meta name="theme-color" content="#101127" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="cover.webp" type="image/webp">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: {
+          paper:  { DEFAULT:'#F5EFE3', alt:'#ECE3D2', deep:'#E3D7C1' },
+          ink:    { DEFAULT:'#2B2620', soft:'#5C5347' },
+          forest: { DEFAULT:'#45533C', light:'#6E7D5C', dark:'#2F3A28' },
+          ember:  { DEFAULT:'#C2683A', light:'#DD9261', dark:'#9E5026' },
+          gold:   '#D8A24A',
+          night:  { DEFAULT:'#14152B', alt:'#1D1B2E', card:'#211E2C' },
+          cream:  '#F3EBDC'
+        },
+        fontFamily: {
+          serif: ['Fraunces','Georgia','Cambria','serif'],
+          sans:  ['"Hanken Grotesk"','ui-sans-serif','system-ui','-apple-system','sans-serif']
+        },
+        boxShadow: {
+          soft:'0 24px 60px -28px rgba(43,38,32,0.40)',
+          lift:'0 30px 80px -30px rgba(20,21,43,0.55)'
+        }
+      } }
+    }
+  </script>
+  <style>
+    html{ -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility; }
+    body{ overflow-x:hidden; font-optical-sizing:auto; }
+    .font-serif{ font-optical-sizing:auto; }
+
+    /* ---------- dusk photographic atmosphere ---------- */
+    .dusk{ position:relative; isolation:isolate;
+      background:linear-gradient(180deg,#0d0e22 0%,#171830 24%,#322c41 50%,#674539 80%,#8a5b41 100%); }
+    .dusk__stars{ position:absolute; inset:0; z-index:1; pointer-events:none;
+      background-image:
+        radial-gradient(1.4px 1.4px at 12% 16%, rgba(255,255,255,.95), transparent),
+        radial-gradient(1px 1px at 27% 11%, rgba(255,255,255,.7), transparent),
+        radial-gradient(1.6px 1.6px at 44% 20%, rgba(255,255,255,.95), transparent),
+        radial-gradient(1px 1px at 60% 9%, rgba(255,255,255,.7), transparent),
+        radial-gradient(1.3px 1.3px at 76% 18%, rgba(255,255,255,.85), transparent),
+        radial-gradient(1px 1px at 88% 13%, rgba(255,255,255,.7), transparent),
+        radial-gradient(1.2px 1.2px at 18% 30%, rgba(255,255,255,.7), transparent),
+        radial-gradient(1px 1px at 37% 34%, rgba(255,255,255,.6), transparent),
+        radial-gradient(1.5px 1.5px at 54% 28%, rgba(255,255,255,.85), transparent),
+        radial-gradient(1px 1px at 71% 33%, rgba(255,255,255,.6), transparent),
+        radial-gradient(1.2px 1.2px at 92% 28%, rgba(255,255,255,.7), transparent),
+        radial-gradient(1px 1px at 7% 42%, rgba(255,255,255,.5), transparent),
+        radial-gradient(1.3px 1.3px at 83% 40%, rgba(255,255,255,.6), transparent);
+      -webkit-mask-image:linear-gradient(180deg,#000 0%,#000 38%,transparent 64%);
+      mask-image:linear-gradient(180deg,#000 0%,#000 38%,transparent 64%); }
+    .dusk__mw{ position:absolute; z-index:1; top:-6%; left:34%; width:54%; height:72%;
+      transform:rotate(20deg); pointer-events:none; filter:blur(10px);
+      background:radial-gradient(closest-side, rgba(196,188,228,.18), transparent 72%); }
+    .dusk__horizon{ position:absolute; inset:auto 0 0 0; height:64%; z-index:1; pointer-events:none;
+      background:radial-gradient(120% 78% at 50% 100%, rgba(206,122,68,.55), rgba(120,82,92,.16) 46%, transparent 72%); }
+    .dusk__grain::after{ content:""; position:absolute; inset:0; z-index:2; pointer-events:none; opacity:.05;
+      background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+    .ridge{ position:absolute; left:0; right:0; bottom:0; pointer-events:none; }
+    .ridge--back{ height:30%; z-index:2; background:#26321f; opacity:.9;
+      clip-path:polygon(0% 100%,0% 48%,4% 30%,8% 52%,12% 26%,17% 50%,21% 36%,26% 52%,30% 22%,35% 50%,40% 34%,45% 52%,50% 28%,55% 50%,60% 32%,65% 52%,70% 24%,75% 50%,80% 36%,85% 52%,90% 30%,95% 50%,100% 44%,100% 100%); }
+    .ridge--front{ height:22%; z-index:3; background:#0d140c;
+      clip-path:polygon(0% 100%,0% 62%,2.5% 50%,5% 66%,7.5% 44%,10% 64%,13% 52%,16% 68%,19% 40%,22% 64%,25% 54%,28% 67%,32% 46%,36% 66%,40% 56%,44% 68%,48% 42%,52% 64%,56% 52%,60% 67%,64% 45%,68% 64%,72% 56%,76% 68%,80% 48%,84% 64%,88% 54%,92% 67%,96% 50%,100% 62%,100% 100%); }
+
+    /* paper grain for body sections */
+    .grain{ position:relative; }
+    .grain::after{ content:""; position:absolute; inset:0; pointer-events:none; opacity:.03; mix-blend-mode:multiply;
+      background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+
+    /* ============================================================
+       REALISTIC 3D BOOK  — the centerpiece
+       wrappers: .scene(perspective) > .book-enter(once) > .book-float(loop) > .book(rotate)
+       ============================================================ */
+    .scene{
+      --w: clamp(11rem, 39vw, 16rem);   /* cover width  */
+      --ar: 1.7921;                     /* height / width (cover image ratio) */
+      --t: clamp(32px, 4.4vw, 50px);    /* spine thickness */
+      position:relative; display:flex; justify-content:center; align-items:flex-end;
+      perspective:1700px; perspective-origin:50% 42%;
+      width:var(--w); height:calc(var(--w) * var(--ar));
+      margin-inline:auto; }
+
+    .book-enter{ transform-style:preserve-3d; animation:bookIn 1.2s cubic-bezier(.16,1,.3,1) .15s both; }
+    .book-float{ transform-style:preserve-3d; animation:floaty 7s ease-in-out 1.3s infinite; }
+    .book{
+      position:relative; width:var(--w); height:calc(var(--w) * var(--ar));
+      transform-style:preserve-3d; will-change:transform;
+      transform:rotateX(var(--rx,7deg)) rotateY(var(--ry,-23deg));
+      transition:transform .12s linear; }
+
+    .book__face{ position:absolute; inset:0; overflow:hidden;
+      border-radius:3px 8px 8px 3px; backface-visibility:hidden;
+      transform:translateZ(calc(var(--t) / 2));
+      box-shadow:0 0 0 1px rgba(18,16,26,.4); }
+    .book__face picture{ display:block; width:100%; height:100%; }
+    .book__cover{ display:block; width:100%; height:100%; object-fit:cover; }
+
+    /* shading baked onto the front cover: dark bound edge (left) → bright fore-edge (right) */
+    .book__shade{ position:absolute; inset:0; pointer-events:none; border-radius:3px 8px 8px 3px;
+      transform:translateZ(calc(var(--t) / 2 + .4px));
+      background:linear-gradient(90deg,
+        rgba(0,0,0,.34) 0%, rgba(0,0,0,.08) 5%, rgba(255,255,255,0) 15%,
+        rgba(255,255,255,.05) 84%, rgba(255,255,255,.22) 99%); }
+    /* moving gloss sweep */
+    .book__gloss{ position:absolute; inset:0; pointer-events:none; overflow:hidden; border-radius:3px 8px 8px 3px;
+      transform:translateZ(calc(var(--t) / 2 + .6px));
+      background:linear-gradient(108deg, transparent 38%, rgba(255,255,255,.26) 50%, transparent 62%);
+      background-size:280% 100%; background-position:150% 0;
+      animation:gloss 8s ease-in-out 1.8s infinite; }
+
+    .book__back{ position:absolute; inset:0; border-radius:3px 8px 8px 3px;
+      transform:translateZ(calc(var(--t) / -2)); backface-visibility:hidden;
+      background:linear-gradient(115deg,#222a1c 0%,#33402a 52%,#1c2416 100%);
+      box-shadow:inset 0 0 0 1px rgba(0,0,0,.45), inset 0 0 40px rgba(0,0,0,.4); }
+
+    /* fore-edge: stacked page block on the right */
+    .book__edge--fore{ position:absolute; top:3px; height:calc(100% - 6px);
+      left:calc(100% - var(--t) / 2); width:var(--t); transform:rotateY(90deg); border-radius:1px;
+      background:
+        linear-gradient(90deg, rgba(0,0,0,.22) 0%, rgba(0,0,0,0) 14%, rgba(255,255,255,.28) 50%, rgba(0,0,0,0) 86%, rgba(0,0,0,.24) 100%),
+        repeating-linear-gradient(90deg,#f1ead8 0 1px,#cdc2a6 1px 2.4px);
+      box-shadow:inset 0 7px 9px -7px rgba(0,0,0,.55), inset 0 -7px 9px -7px rgba(0,0,0,.55); }
+    /* top edge of the page block (visible thanks to the forward tilt) */
+    .book__edge--top{ position:absolute; left:3px; width:calc(100% - 6px);
+      top:calc(var(--t) / -2); height:var(--t); transform:rotateX(90deg); border-radius:1px;
+      background:
+        linear-gradient(0deg, rgba(0,0,0,.28) 0%, rgba(0,0,0,0) 16%, rgba(255,255,255,.26) 52%, rgba(0,0,0,0) 86%, rgba(0,0,0,.2) 100%),
+        repeating-linear-gradient(0deg,#f1ead8 0 1px,#cdc2a6 1px 2.4px); }
+    /* bound spine on the left */
+    .book__spine{ position:absolute; top:0; height:100%; left:calc(var(--t) / -2); width:var(--t);
+      transform:rotateY(90deg);
+      background:linear-gradient(90deg,#161d10,#2c3724 48%,#10160c);
+      box-shadow:inset 0 0 14px rgba(0,0,0,.7); }
+
+    /* soft contact shadow on the floor (breathes with the float) */
+    .book__shadow{ position:absolute; left:50%; bottom:-9%; z-index:-1;
+      width:calc(var(--w) * .92); height:42px; border-radius:50%;
+      background:radial-gradient(closest-side, rgba(6,7,16,.6), transparent 78%);
+      filter:blur(15px); transform:translateX(-50%);
+      animation:shadowPulse 7s ease-in-out 1.3s infinite; }
+
+    @keyframes bookIn{ from{ opacity:0; transform:translateY(52px) scale(.9) } to{ opacity:1; transform:none } }
+    @keyframes floaty{ 0%,100%{ transform:translateY(0) } 50%{ transform:translateY(-15px) } }
+    @keyframes shadowPulse{ 0%,100%{ transform:translateX(-50%) scale(1); opacity:.8 } 50%{ transform:translateX(-50%) scale(.84); opacity:.5 } }
+    @keyframes gloss{ 0%{ background-position:160% 0 } 16%,100%{ background-position:-60% 0 } }
+
+    /* scroll reveal */
+    .reveal{ opacity:0; transform:translateY(22px); transition:opacity .8s cubic-bezier(.16,1,.3,1), transform .8s cubic-bezier(.16,1,.3,1); }
+    .reveal.in{ opacity:1; transform:none; }
+    .reveal[data-d="1"]{ transition-delay:.08s } .reveal[data-d="2"]{ transition-delay:.16s }
+    .reveal[data-d="3"]{ transition-delay:.24s } .reveal[data-d="4"]{ transition-delay:.32s }
+
+    /* nav */
+    #nav{ transition:background .35s ease, border-color .35s ease, box-shadow .35s ease; }
+    #nav.scrolled{ background:rgba(13,14,30,.82); box-shadow:0 10px 30px -18px rgba(0,0,0,.7); }
+
+    /* sticky buy bar — always-visible purchase path */
+    #buybar{ transform:translateY(135%); transition:transform .4s cubic-bezier(.16,1,.3,1); }
+    #buybar.show{ transform:translateY(0); }
+
+    /* attention pulse on the primary buy button */
+    @keyframes ctaPulse{
+      0%,100%{ box-shadow:0 0 0 0 rgba(221,146,97,.55), 0 30px 80px -30px rgba(20,21,43,.55); }
+      50%{ box-shadow:0 0 0 16px rgba(221,146,97,0), 0 30px 80px -30px rgba(20,21,43,.55); } }
+    .cta-glow{ animation:ctaPulse 2.6s ease-out infinite; }
+
+    :focus-visible{ outline:3px solid #DD9261; outline-offset:3px; border-radius:8px; }
+
+    @media (prefers-reduced-motion: reduce){
+      .reveal{ opacity:1!important; transform:none!important; transition:none!important; }
+      .book-enter,.book-float,.book__gloss,.book__shadow,.cta-glow{ animation:none!important; }
+      .book{ transform:rotateX(6deg) rotateY(-20deg)!important; transition:none!important; }
+      html{ scroll-behavior:auto; }
+    }
+  </style>
+</head>
+
+<body class="bg-paper text-ink font-sans antialiased selection:bg-ember/20">
+  <a href="#buy" class="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:top-3 focus:left-3 focus:bg-forest focus:text-paper focus:px-4 focus:py-2 focus:rounded-lg">Skip to checkout</a>
+
+  <!-- ============ TOP BAR ============ -->
+  <header class="fixed top-4 inset-x-0 z-50 px-4">
+    <nav id="nav" class="max-w-4xl mx-auto rounded-full pl-5 pr-2 h-14 flex items-center justify-between text-cream"
+         style="background:rgba(18,18,34,.5); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); border:1px solid rgba(243,235,220,.12);">
+      <a href="#" class="font-serif text-base tracking-tight flex items-center gap-2.5">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" class="text-ember-light" aria-hidden="true">
+          <circle cx="12" cy="12" r="2"/><circle cx="12" cy="12" r="6" opacity=".6"/><circle cx="12" cy="12" r="10" opacity=".3"/>
+        </svg>
+        Settle <span class="text-ember-light">with Mara</span>
+      </a>
+      <div class="hidden md:flex items-center gap-7 text-sm text-cream/75">
+        <a href="#method" class="hover:text-cream transition-colors">The Method</a>
+        <a href="#inside" class="hover:text-cream transition-colors">The Book</a>
+      </div>
+      <a href="https://whop.com/checkout/plan_hG9DSlV94ZFkH" class="bg-ember hover:bg-ember-dark text-paper text-sm font-bold px-5 h-10 inline-flex items-center rounded-full cursor-pointer transition-colors">Buy now — $19</a>
+    </nav>
+  </header>
+
+  <main>
+
+  <!-- ============ HERO — the book, centre stage ============ -->
+  <section id="hero" class="dusk dusk__grain min-h-screen flex items-center overflow-hidden">
+    <div class="dusk__stars" aria-hidden="true"></div>
+    <div class="dusk__mw" aria-hidden="true"></div>
+    <div class="dusk__horizon" aria-hidden="true"></div>
+    <div class="ridge ridge--back" aria-hidden="true"></div>
+    <div class="ridge ridge--front" aria-hidden="true"></div>
+
+    <div class="relative z-10 w-full max-w-3xl mx-auto px-5 pt-28 pb-16 text-center text-cream">
+      <span class="reveal inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-medium text-cream/85 mb-6"
+            style="background:rgba(243,235,220,.10); border:1px solid rgba(243,235,220,.2);">
+        <span class="w-1.5 h-1.5 rounded-full bg-ember-light"></span> A pocket practice from the lookout
+      </span>
+
+      <h1 class="reveal font-serif font-medium text-[2.5rem] md:text-[3.75rem] leading-[1.05] tracking-[-0.015em] mb-5" data-d="1">
+        You're not broken.<br>You're just <span class="italic text-ember-light">stuck in &ldquo;go.&rdquo;</span>
+      </h1>
+      <p class="reveal text-lg md:text-xl text-cream/80 max-w-lg mx-auto leading-relaxed mb-12" data-d="2">
+        <em>The Settle Method</em> — the one practice that drops your body from <em>wired</em> to <em>settled</em> in under two minutes.
+      </p>
+
+      <!-- ★ THE BOOK ★ -->
+      <div class="reveal" data-d="2">
+        <div class="scene" id="scene">
+          <div class="book-enter">
+            <div class="book-float">
+              <div class="book" id="book">
+                <span class="book__back" aria-hidden="true"></span>
+                <span class="book__spine" aria-hidden="true"></span>
+                <span class="book__edge book__edge--fore" aria-hidden="true"></span>
+                <span class="book__edge book__edge--top" aria-hidden="true"></span>
+                <div class="book__face">
+                  <picture>
+                    <source srcset="cover.webp" type="image/webp">
+                    <img class="book__cover" src="cover.jpg" width="760" height="1362" decoding="async" fetchpriority="high"
+                         alt="The Settle Method by Mara — a weathered fire-lookout keeper on her tower above a starlit forest at dusk" />
+                  </picture>
+                </div>
+                <span class="book__shade" aria-hidden="true"></span>
+                <span class="book__gloss" aria-hidden="true"></span>
+              </div>
+            </div>
+          </div>
+          <span class="book__shadow" aria-hidden="true"></span>
+        </div>
+      </div>
+
+      <!-- CTA + price -->
+      <div class="reveal flex flex-col items-center gap-4 mt-14" data-d="3">
+        <a href="https://whop.com/checkout/plan_hG9DSlV94ZFkH" class="group inline-flex items-center gap-2.5 bg-ember hover:bg-ember-dark text-paper font-bold text-lg px-9 py-4 rounded-full shadow-lift cursor-pointer transition-colors">
+          Buy the book — $19
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" class="transition-transform group-hover:translate-x-1" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <p class="text-cream/85 text-base">One-time payment &middot; pay by card or PayPal &middot; download right away</p>
+        <p class="text-cream/55 text-sm">Just $19 — less than a single $150+ therapy hour. 30-day money-back guarantee.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ THE METHOD ============ -->
+  <section id="method" class="grain bg-paper-alt border-y border-ink/5">
+    <div class="max-w-6xl mx-auto px-5 py-20">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <p class="reveal uppercase tracking-[0.24em] text-xs font-semibold text-ember mb-4">The whole method &middot; about 90 seconds</p>
+        <h2 class="reveal font-serif text-3xl md:text-5xl tracking-[-0.015em]" data-d="1">Slow &middot; Say &middot; Sense &middot; Scan</h2>
+        <p class="reveal text-ink-soft text-lg leading-relaxed mt-5" data-d="2">You can't <span class="italic">think</span> your way calm. Your body listens to your breath, your weight, and your attention — the method is simply how you use all three.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div class="reveal bg-paper rounded-3xl p-7 shadow-soft" data-d="1">
+          <span class="grid place-items-center w-12 h-12 rounded-2xl bg-ember/12 text-ember mb-5">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.7 7.7a2.5 2.5 0 1 1 1.8 4.3H2"/><path d="M9.6 4.6A2 2 0 1 1 11 8H2"/><path d="M12.6 19.4A2 2 0 1 0 14 16H2"/></svg>
+          </span>
+          <h3 class="font-serif text-xl mb-2">Slow</h3>
+          <p class="text-[15px] text-ink-soft leading-relaxed">Two short breaths in — then a long breath out. The fastest way down.</p>
+        </div>
+        <div class="reveal bg-paper rounded-3xl p-7 shadow-soft" data-d="2">
+          <span class="grid place-items-center w-12 h-12 rounded-2xl bg-ember/12 text-ember mb-5">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </span>
+          <h3 class="font-serif text-xl mb-2">Say</h3>
+          <p class="text-[15px] text-ink-soft leading-relaxed">Name the state in three words. &ldquo;Chest tight, wired.&rdquo; The state, not the story.</p>
+        </div>
+        <div class="reveal bg-paper rounded-3xl p-7 shadow-soft" data-d="3">
+          <span class="grid place-items-center w-12 h-12 rounded-2xl bg-ember/12 text-ember mb-5">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="5" r="3"/><line x1="12" y1="22" x2="12" y2="8"/><path d="M5 12H2a10 10 0 0 0 20 0h-3"/></svg>
+          </span>
+          <h3 class="font-serif text-xl mb-2">Sense</h3>
+          <p class="text-[15px] text-ink-soft leading-relaxed">Feel one point of contact. Feet on the floor. Press in. Let it hold you.</p>
+        </div>
+        <div class="reveal bg-paper rounded-3xl p-7 shadow-soft" data-d="4">
+          <span class="grid place-items-center w-12 h-12 rounded-2xl bg-ember/12 text-ember mb-5">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>
+          </span>
+          <h3 class="font-serif text-xl mb-2">Scan</h3>
+          <p class="text-[15px] text-ink-soft leading-relaxed">Look slowly around. Name three things you can see. You're here, and here is okay.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ THE BOOK / WHAT'S INSIDE ============ -->
+  <section id="inside" class="grain bg-paper overflow-hidden">
+    <div class="max-w-6xl mx-auto px-5 py-24 grid lg:grid-cols-2 gap-14 items-center">
+      <!-- small cover motif, ties back to the hero -->
+      <div class="reveal order-last lg:order-first flex justify-center">
+        <div class="relative">
+          <div class="absolute -inset-6 bg-ember/15 blur-3xl rounded-full" aria-hidden="true"></div>
+          <picture>
+            <source srcset="cover.webp" type="image/webp">
+            <img src="cover.jpg" width="760" height="1362" loading="lazy" decoding="async"
+                 alt="The Settle Method workbook cover"
+                 class="relative w-52 md:w-60 rounded-[6px] shadow-[0_30px_60px_-25px_rgba(20,21,43,.7)] ring-1 ring-ink/10" />
+          </picture>
+        </div>
+      </div>
+      <div>
+        <h2 class="reveal font-serif text-3xl md:text-5xl tracking-[-0.015em] mb-4">What's inside the book</h2>
+        <p class="reveal text-lg text-ink-soft leading-relaxed mb-9" data-d="1">18 short drills, one page each. Not a 21-day challenge — there's no streak to break. Miss a week? Just pick up the next drill.</p>
+        <div class="grid sm:grid-cols-2 gap-5">
+          <div class="reveal bg-paper-alt rounded-3xl p-6 shadow-soft" data-d="1">
+            <span class="grid place-items-center w-11 h-11 rounded-2xl bg-forest/10 text-forest mb-4">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
+            </span>
+            <h3 class="font-serif text-lg mb-1.5">18 two-minute drills</h3><p class="text-[15px] text-ink-soft leading-relaxed">A few minutes of doing, a minute of jotting. Run one between meetings.</p>
+          </div>
+          <div class="reveal bg-paper-alt rounded-3xl p-6 shadow-soft" data-d="2">
+            <span class="grid place-items-center w-11 h-11 rounded-2xl bg-forest/10 text-forest mb-4">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+            </span>
+            <h3 class="font-serif text-lg mb-1.5">The 3am Settle</h3><p class="text-[15px] text-ink-soft leading-relaxed">A lying-down version for the nights your mind won't switch off. Eyes closed, nothing to fix.</p>
+          </div>
+          <div class="reveal bg-paper-alt rounded-3xl p-6 shadow-soft" data-d="1">
+            <span class="grid place-items-center w-11 h-11 rounded-2xl bg-forest/10 text-forest mb-4">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.7 5.1A10.4 10.4 0 0 1 12 5c7 0 10 7 10 7a13.2 13.2 0 0 1-1.7 2.7"/><path d="M6.6 6.6A13.5 13.5 0 0 0 2 12s3 7 10 7a9.7 9.7 0 0 0 5.4-1.6"/><line x1="2" y1="2" x2="22" y2="22"/></svg>
+            </span>
+            <h3 class="font-serif text-lg mb-1.5">The invisible Settle</h3><p class="text-[15px] text-ink-soft leading-relaxed">Run it mid-conversation, eyes open, while you keep talking. Nobody knows it's happening.</p>
+          </div>
+          <div class="reveal bg-paper-alt rounded-3xl p-6 shadow-soft" data-d="2">
+            <span class="grid place-items-center w-11 h-11 rounded-2xl bg-forest/10 text-forest mb-4">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2.5"/><path d="M12 18h.01"/></svg>
+            </span>
+            <h3 class="font-serif text-lg mb-1.5">Fillable on your phone</h3><p class="text-[15px] text-ink-soft leading-relaxed">Type your answers right in, or print it. Built for a small screen.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PERSONA PULL-QUOTE ============ -->
+  <section class="grain bg-forest text-cream">
+    <div class="max-w-3xl mx-auto px-5 py-24 text-center">
+      <span class="reveal inline-block rounded-full p-1 ring-1 ring-cream/25 mb-7">
+        <picture>
+          <source srcset="mara-portrait.webp" type="image/webp">
+          <img src="mara-portrait.jpg" width="96" height="96" loading="lazy" decoding="async"
+               alt="Mara, the Lookout — guide of The Settle Method" class="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover" />
+        </picture>
+      </span>
+      <blockquote class="reveal font-serif italic text-3xl md:text-[2.6rem] leading-[1.2] mb-6" data-d="1">
+        &ldquo;You don't have to feel calm.<br>You just have to settle.&rdquo;
+      </blockquote>
+      <p class="reveal text-cream/70 text-sm uppercase tracking-[0.2em]" data-d="2">— Mara, the Lookout</p>
+    </div>
+  </section>
+
+  <!-- ============ FINAL CTA — dusk again ============ -->
+  <section id="buy" class="dusk dusk__grain relative overflow-hidden">
+    <div class="dusk__stars" aria-hidden="true"></div>
+    <div class="dusk__horizon" aria-hidden="true"></div>
+    <div class="relative z-10 max-w-2xl mx-auto px-5 py-24 text-center text-cream">
+      <p class="reveal uppercase tracking-[0.24em] text-xs font-semibold text-ember-light mb-4">How to get your copy</p>
+      <h2 class="reveal font-serif text-3xl md:text-5xl tracking-[-0.015em] leading-tight mb-4">Get The Settle Method</h2>
+      <p class="reveal text-cream/85 text-lg mb-10 max-w-xl mx-auto" data-d="1">It only takes a minute. Here is all you do:</p>
+
+      <ol class="reveal grid sm:grid-cols-3 gap-6 text-left max-w-2xl mx-auto mb-12" data-d="1">
+        <li class="flex sm:flex-col gap-3 items-center sm:items-start">
+          <span class="shrink-0 grid place-items-center w-11 h-11 rounded-full bg-ember text-paper font-bold text-lg" aria-hidden="true">1</span>
+          <p class="text-cream/90 text-base leading-snug">Tap the orange <strong class="text-cream">Buy now</strong> button below.</p>
+        </li>
+        <li class="flex sm:flex-col gap-3 items-center sm:items-start">
+          <span class="shrink-0 grid place-items-center w-11 h-11 rounded-full bg-ember text-paper font-bold text-lg" aria-hidden="true">2</span>
+          <p class="text-cream/90 text-base leading-snug">Pay safely with your <strong class="text-cream">card or PayPal</strong>. No account to create.</p>
+        </li>
+        <li class="flex sm:flex-col gap-3 items-center sm:items-start">
+          <span class="shrink-0 grid place-items-center w-11 h-11 rounded-full bg-ember text-paper font-bold text-lg" aria-hidden="true">3</span>
+          <p class="text-cream/90 text-base leading-snug">Download it right away to your <strong class="text-cream">phone or computer</strong>.</p>
+        </li>
+      </ol>
+
+      <a href="https://whop.com/checkout/plan_hG9DSlV94ZFkH" class="cta-glow reveal group inline-flex items-center gap-2.5 bg-ember hover:bg-ember-dark text-paper font-bold text-xl md:text-2xl px-12 py-5 rounded-full shadow-lift cursor-pointer transition-colors" data-d="2">
+        Buy now — $19
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="transition-transform group-hover:translate-x-1" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <p class="reveal text-cream/75 text-base mt-6" data-d="2">Secure checkout &middot; instant download &middot; 30-day money-back guarantee</p>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- ============ STICKY BUY BAR (follows you down the page) ============ -->
+  <div id="buybar" class="fixed bottom-0 inset-x-0 z-40 px-3 pb-3" aria-hidden="true">
+    <div class="mx-auto max-w-3xl rounded-2xl bg-night/95 backdrop-blur px-4 py-3 flex items-center justify-between gap-4 shadow-lift" style="border:1px solid rgba(243,235,220,.12);">
+      <div class="text-cream leading-tight min-w-0">
+        <p class="font-serif text-lg truncate">The Settle Method</p>
+        <p class="text-cream/60 text-xs">$19 &middot; secure checkout &middot; instant download</p>
+      </div>
+      <a href="https://whop.com/checkout/plan_hG9DSlV94ZFkH" class="shrink-0 inline-flex items-center gap-2 bg-ember hover:bg-ember-dark text-paper font-bold text-base px-6 py-3 rounded-full cursor-pointer transition-colors">
+        Buy now — $19
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- ============ FOOTER — compliance (988, not medical advice, AI disclosure) ============ -->
+  <footer class="bg-night text-cream/70">
+    <div class="max-w-5xl mx-auto px-5 py-14 text-sm">
+      <div class="flex flex-col md:flex-row justify-between gap-8 mb-8">
+        <div class="max-w-sm">
+          <p class="font-serif text-lg text-cream mb-2.5 flex items-center gap-2.5">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" class="text-ember-light" aria-hidden="true"><circle cx="12" cy="12" r="2"/><circle cx="12" cy="12" r="6" opacity=".6"/><circle cx="12" cy="12" r="10" opacity=".3"/></svg>
+            Settle with Mara
+          </p>
+          <p class="leading-relaxed">A pocket practice to calm an overwired body. Find Mara on
+            <a href="https://www.tiktok.com/@settlewithmara" class="underline hover:text-cream">TikTok</a> &middot;
+            <a href="https://www.instagram.com/settlewithmara" class="underline hover:text-cream">Instagram</a> &middot;
+            <a href="https://www.youtube.com/@settlewithmara" class="underline hover:text-cream">YouTube</a>.</p>
+        </div>
+        <div>
+          <p class="text-cream/40 uppercase text-xs tracking-widest mb-3">Legal</p>
+          <ul class="space-y-1.5"><li><a href="#" class="hover:text-cream">Terms</a></li><li><a href="#" class="hover:text-cream">Privacy</a></li><li><a href="#" class="hover:text-cream">Refunds</a></li></ul>
+        </div>
+      </div>
+      <div class="border-t border-cream/10 pt-6 space-y-2 text-xs text-cream/50 leading-relaxed">
+        <p><strong>Not medical advice.</strong> The Settle Method is education and a self-guided practice for everyday stress — not a treatment, diagnosis, or substitute for care from a licensed professional. If your feelings are severe or persistent, or you ever feel unsafe with yourself, contact a licensed professional or, in the US, call or text <strong>988</strong> (Suicide &amp; Crisis Lifeline) anytime.</p>
+        <p><strong>About Mara:</strong> Mara is an AI-created character; this content is AI-assisted and offered for general education only.</p>
+        <p>© <span id="year"></span> Settle with Mara. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // ---------- scroll reveal (motion-safe) ----------
+    (function(){
+      const els = document.querySelectorAll('.reveal');
+      const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if(reduce || !('IntersectionObserver' in window)){ els.forEach(e=>e.classList.add('in')); return; }
+      const io = new IntersectionObserver((entries)=>{
+        entries.forEach(en=>{ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } });
+      }, { rootMargin:'0px 0px -10% 0px', threshold:0.12 });
+      els.forEach(e=>io.observe(e));
+    })();
+
+    // ---------- nav scrolled state ----------
+    (function(){
+      const nav = document.getElementById('nav');
+      const onScroll = ()=> nav.classList.toggle('scrolled', window.scrollY > 40);
+      onScroll(); window.addEventListener('scroll', onScroll, { passive:true });
+    })();
+
+    // ---------- the book: cursor-follow tilt + scroll rotation (rAF-smoothed) ----------
+    (function(){
+      const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const hero = document.getElementById('hero');
+      const book = document.getElementById('book');
+      if(reduce || !book || !hero) return;
+
+      const BASE_RY = -23, BASE_RX = 7;     // resting 3/4 view
+      let pRY = 0, pRX = 0, sRY = 0;        // pointer + scroll offsets (targets)
+      let ry = BASE_RY, rx = BASE_RX;       // current (eased)
+
+      hero.addEventListener('pointermove', (e)=>{
+        const r = hero.getBoundingClientRect();
+        const nx = (e.clientX - (r.left + r.width/2)) / (r.width/2);   // -1 .. 1
+        const ny = (e.clientY - (r.top + r.height/2)) / (r.height/2);
+        pRY = Math.max(-1,Math.min(1,nx)) * 16;     // turn toward the cursor
+        pRX = Math.max(-1,Math.min(1,ny)) * -11;    // tip with the cursor
+      }, { passive:true });
+      hero.addEventListener('pointerleave', ()=>{ pRY = 0; pRX = 0; });
+
+      window.addEventListener('scroll', ()=>{
+        const h = hero.offsetHeight || 1;
+        const p = Math.max(0, Math.min(1, window.scrollY / h));
+        sRY = p * 12;   // book opens a touch as you scroll past
+      }, { passive:true });
+
+      (function tick(){
+        const tRY = BASE_RY + pRY + sRY;
+        const tRX = BASE_RX + pRX;
+        ry += (tRY - ry) * 0.09;
+        rx += (tRX - rx) * 0.09;
+        book.style.setProperty('--ry', ry.toFixed(2) + 'deg');
+        book.style.setProperty('--rx', rx.toFixed(2) + 'deg');
+        requestAnimationFrame(tick);
+      })();
+    })();
+
+    // ---------- sticky buy bar: show after the hero, hide once the buy section is on screen ----------
+    (function(){
+      const bar = document.getElementById('buybar');
+      const heroEl = document.getElementById('hero');
+      const buyEl  = document.getElementById('buy');
+      if(!bar || !heroEl || !buyEl || !('IntersectionObserver' in window)) return;
+      let pastHero = false, atBuy = false;
+      const apply = ()=>{ const show = pastHero && !atBuy; bar.classList.toggle('show', show); bar.setAttribute('aria-hidden', show ? 'false' : 'true'); };
+      new IntersectionObserver(([e])=>{ pastHero = !e.isIntersecting; apply(); }, { threshold:0 }).observe(heroEl);
+      new IntersectionObserver(([e])=>{ atBuy = e.isIntersecting; apply(); }, { threshold:0.15 }).observe(buyEl);
+    })();
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <!-- Buy buttons link directly to the Whop hosted checkout (plan_hG9DSlV94ZFkH). -->
+  <!-- To swap the product later, change the 4 https://whop.com/checkout/... links. -->
+  <!-- Optional: Whop embedded checkout overlay — https://dev.whop.com/sdk/checkout -->
+  <!-- <script async defer src="https://js.whop.com/static/checkout/loader.js"></script> -->
+  <!-- Then add data-whop-checkout-plan-id="plan_hG9DSlV94ZFkH" to a button to open it in a modal. -->
+</body>
+</html>
